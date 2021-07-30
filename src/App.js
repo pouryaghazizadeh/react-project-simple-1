@@ -1,40 +1,31 @@
 import SearchBox from "./component/SearchBox";
 import styled from "styled-components";
-import { Switch, Route,NavLink} from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 import Home from "./component/Home";
-import Aboute from "./component/Aboute";
+import Aboute from "./component/About";
 function App() {
   return (
-   
     <Div>
-    <H1>TvMaze</H1>
-     <SearchBox/>
-     <Ulstyle>
+      <H1>TvMaze</H1>
+      <SearchBox />
+      <Ulstyle>
         <Li>
           <NavLink to="/">Home</NavLink>
         </Li>
         <Li>
-          <NavLink to="/About">about</NavLink>
+          <NavLink to="/Aboute">about</NavLink>
         </Li>
         <Li>
           <NavLink to="Login">Login</NavLink>
         </Li>
       </Ulstyle>
-      
 
-     
       <Switch>
-      <Route path="/Home" exact><Home/></Route>
-      <Route path ="/Aboute" ><Aboute/></Route>
-      <Route></Route>
-      <Route></Route>
+        <Route path="/Home" exact component={Home}/>
+   
+        <Route path="/Aboute" component={Aboute} />
       </Switch>
     </Div>
-
-   
- 
-
-   
   );
 }
 
@@ -54,6 +45,7 @@ const Li = styled.li`
 // style for header website
 const Div = styled.div`
   height: 100px;
+  display: block;
   width: 100vw;
   padding: 0px;
   margin: 0px;
@@ -69,7 +61,6 @@ const H1 = styled.h1`
   margin: 0px;
   display: flex;
   align-self: flex-start;
-  
 `;
 
 export default App;
