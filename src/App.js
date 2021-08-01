@@ -5,29 +5,54 @@ import Home from "./component/Home";
 import Aboute from "./component/About";
 function App() {
   return (
-    <Div>
-      <H1>TvMaze</H1>
-      <SearchBox />
-      <Ulstyle>
-        <Li>
-          <NavLink to="/">Home</NavLink>
-        </Li>
-        <Li>
-          <NavLink to="/Aboute">about</NavLink>
-        </Li>
-        <Li>
-          <NavLink to="Login">Login</NavLink>
-        </Li>
-      </Ulstyle>
+    <>
+      <Div>
+        <div style={HSstyle}>
+          <H1>TvMaze</H1>
+          <SearchBox />
+        </div>
+        <Ulstyle>
+          <Li>
+            <NavLink
+              exact
+              to="/"
+              style={NnLink}
+              activeStyle={{ color: "white" }}
+            >
+              Home
+            </NavLink>
+          </Li>
+          <Li>
+            <NavLink
+              to="/Aboute"
+              style={NnLink}
+              activeStyle={{ color: "white" }}
+            >
+              about
+            </NavLink>
+          </Li>
+          <Li>
+            <NavLink to="Login" style={NnLink} activeStyle={{ color: "white" }}>
+              Login
+            </NavLink>
+          </Li>
+        </Ulstyle>
+      </Div>
 
       <Switch>
-        <Route path="/Home" exact component={Home}/>
-   
+        <Route path="/" exact component={Home} />
         <Route path="/Aboute" component={Aboute} />
       </Switch>
-    </Div>
+    </>
   );
 }
+// style div that have h1 and searchbox
+const HSstyle = { width: "50vw", display: "flex", alignItems: "baseline" };
+// Nav link style
+const NnLink = {
+  textDecoration: "none",
+  margin:"17px"
+};
 
 // style for ul header
 const Ulstyle = styled.ul`
@@ -36,7 +61,7 @@ const Ulstyle = styled.ul`
   justify-content: center;
   justify-content: space-around;
   align-items: center;
-  width: 250px;
+  width:30vw;
 `;
 const Li = styled.li`
   text-decoration: none;
@@ -45,19 +70,18 @@ const Li = styled.li`
 // style for header website
 const Div = styled.div`
   height: 100px;
-  display: block;
   width: 100vw;
   padding: 0px;
   margin: 0px;
   display: flex;
-  /* justify-content: flex-end; */
+  justify-content: space-between;
   background-color: blue;
   align-items: center;
   align-content: space-between;
   flex-wrap: wrap;
 `;
 const H1 = styled.h1`
-  padding: 0px;
+  padding: 10px;
   margin: 0px;
   display: flex;
   align-self: flex-start;
