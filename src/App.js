@@ -9,7 +9,7 @@ function App() {
       <Div>
         <div style={HSstyle}>
           <H1>TvMaze</H1>
-          <SearchBox />
+          <SearchBox/>
         </div>
         <Ulstyle>
           <Li>
