@@ -1,4 +1,4 @@
-import SearchBox from "./component/SearchBox";
+import {SearchBox} from "./component/SearchBox";
 import styled from "styled-components";
 import { Switch, Route, NavLink } from "react-router-dom";
 import Home from "./component/Home";

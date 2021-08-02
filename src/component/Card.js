@@ -3,9 +3,9 @@ import Data from "../db/data.json";
 const Card = () => {
   return (
     <CARD>
-      {Data.map((data) => {
+      {Data.map((data,index) => {
         return (
-          <DIVCARD id="Div-card">
+          <DIVCARD id={data.id}>
             <H2>
               {data.name}
               {`S${data.season}E${data.number}`}
