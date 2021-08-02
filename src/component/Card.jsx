@@ -5,7 +5,7 @@ const Card = () => {
     <CARD>
       {Data.map((data,index) => {
         return (
-          <DIVCARD id={data.id}>
+          <DIVCARD id={index} className="div-cards">
             <H2>
               {data.name}
               {`S${data.season}E${data.number}`}
