@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Data from "../db/data.json";
 const Card = () => {
+
   return (
     <CARD>
       {Data.map((data,index) => {

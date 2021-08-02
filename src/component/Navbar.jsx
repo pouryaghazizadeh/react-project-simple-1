@@ -1,14 +1,24 @@
 import SearchBox from "./SearchBox";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-
 const Navbar = () => {
+  
+  const proop = (r)=>{  
+    return(r)
+  }
+
   return (
     <>
       <Div>
         <div style={HSstyle}>
           <H1>TvMaze</H1>
-          <SearchBox />
+        
+         
+          
+          
+
+          
+          <SearchBox proop = {proop}/>
         </div>
         <Ulstyle>
           <Li>

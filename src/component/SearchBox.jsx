@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const Input = styled.input`
   width: 200px;
   height: 35px;
@@ -7,18 +8,23 @@ const Input = styled.input`
   border: none;
   outline: none;
   margin: 20px;
-`;
+  `;
 
-const SearchBox = () => {
+const SearchBox = ({proop}) => {
+
+  
   return (
     <div>
       <Input
         type="search"
         placeholder="Search"
-        onChange={(e) => {
-          let setInput = e.target.value
-          console.log(setInput)
-        }}
+        onChange={(e)=>{
+          let r = e.target.value
+       proop(r)
+        }
+            
+        }
+        
       />
     </div>
   );
