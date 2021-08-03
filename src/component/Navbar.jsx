@@ -1,24 +1,21 @@
 import SearchBox from "./SearchBox";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-const Navbar = () => {
-  
-  const proop = (r)=>{  
-    return(r)
-  }
+import { useState } from "react";
+const Navbar = ({getData}) => {
+  const[data,setdata]=useState("")
+  const proop = (input) => {
+    setdata(input);
+    getData(data)
+  };
 
   return (
     <>
       <Div>
         <div style={HSstyle}>
           <H1>TvMaze</H1>
-        
-         
-          
-          
 
-          
-          <SearchBox proop = {proop}/>
+          <SearchBox proop={proop} />
         </div>
         <Ulstyle>
           <Li>
