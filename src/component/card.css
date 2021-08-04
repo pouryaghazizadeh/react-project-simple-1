@@ -1,0 +1,18 @@
+/* this file is style for Card.jsx and Home.js */
+
+
+
+
+/* style Card.js */
+/* style for mother div vard */
+.div-cards{
+    width: 310px;
+  height: 500px;
+  padding: 6px;
+  background-color:#000;
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}

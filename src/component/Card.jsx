@@ -1,24 +1,34 @@
 import styled from "styled-components";
 import Data from "../db/data.json";
-const Card = () => {
+import "../component/card.css"
+// import { useState } from "react";
+const Card = ({value}) => {
+  // const[Value,setValue]=useState("")
+  // setValue(value)
+  // if(Value.length>=0){
+  //   data = data.filter((i)=>{
+  //     return i.name.mach(Value)
+  //   })
+  
   return (
     <CARD>
-   
+    
+ 
       {Data.map((data, index) => {
         return (
-          <DIVCARD key={index} className="div-cards">
+          <div key={index} className="div-cards">
             <H2>
               {data.name}
               {`S${data.season}E${data.number}`}
             </H2>
             <IMG src={data.image.original} alt={data.name} />
             <P> {data.summary.split("</p>").join("").replace("<p>", "")}</P>
-          </DIVCARD>
+          </div>
         );
       })}
     </CARD>
   );
-};
+    };
 // CARD tag thats means a div with all cards
 const CARD = styled.div`
   display: flex;
@@ -28,16 +38,16 @@ const CARD = styled.div`
 `;
 
 // this tag is a  div card that have img title and...
-const DIVCARD = styled.div`
-  width: 310px;
-  height: 500px;
-  padding: 6px;
-  background-color:#000;
-  margin: 4px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-`;
+// const DIVCARD = styled.div`
+//   width: 310px;
+//   height: 500px;
+//   padding: 6px;
+//   background-color:#000;
+//   margin: 4px;
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+// `;
 // H2 is a h2 for title card
 const H2 = styled.h2`
   color: white;
@@ -56,4 +66,5 @@ const P = styled.p`
   display: flex;
   flex-wrap: wrap;
 `;
+
 export default Card;

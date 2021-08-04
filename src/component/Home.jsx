@@ -1,9 +1,11 @@
 import Card from "./Card";
-const Home = () => {
+const Home = ({value}) => {
   return (
-    <>
-      <Card />
-    </>
+    // style={{"padding-top":"70px"}}
+     <div >
+      <Card value = {value}/>
+      
+     </div> 
   );
 };
 

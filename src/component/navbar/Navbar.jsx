@@ -7,18 +7,23 @@ import { useState } from "react";
 
 //
 //
-const Navbar = () => {
+const Navbar = ({getData}) => {
   const [Id, setId] = useState(false);
+  const[data,setData] = useState("")
+  getData(Id,data)
   return (
     <div  id={Id ? "div-compo" : ""}>
       <nav className="mother-nav" id={Id ? "mother-nav2" : ""}>
         <h1 className="name-web" id={Id? "name-web2":""}>TvMaze</h1>
         <input
           type="search"
+          value={data}
           placeholder="Search"
           className="search-box"
           id={Id?"search-box2":""}
-          onChange={(e) => {}}
+          onChange={(e) => {
+            setData(e.target.value)
+          }}
         />
         <FaBars
           className="Bars"
@@ -31,7 +36,7 @@ const Navbar = () => {
           <NavLink
             exact
             to="/"
-            
+
 
             className="NavLink"
             activeStyle={{ color: "#15cdfc" }}
