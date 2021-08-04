@@ -30,7 +30,7 @@ const Navbar = () => {
           <NavLink
             exact
             to="/"
-            id={Id ? "NavLink2" : ""}
+           
             className="NavLink"
             activeStyle={{ color: "#15cdfc" }}
           >
