@@ -1,0 +1,60 @@
+.mother-nav{
+    height: 85px;
+    width:100vw;
+    background: #000;
+    display: flex;
+    align-items: center;
+}
+/* this style for berger navbae */
+.Bars {
+  display: none;
+}
+/* this style for div that have navlink */
+.nave-menu{
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+/* this is NavLinl style */
+.NavLink{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-size: 15px;
+}
+.NavLink:hover{
+  color: #15cdfc;
+}
+
+/* thi is a style for NaveLink Login */
+.Log-in{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.Log-in:hover{
+    color: #000000;
+    background: #fff;
+    height: 40px;
+    border-radius: 4px;
+}
+/* sstyle for search box */
+.search-box{
+    width: 200px;
+  height: 35px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin: 20px;
+}
+
