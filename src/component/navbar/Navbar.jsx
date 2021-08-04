@@ -17,6 +17,7 @@ const Navbar = () => {
           type="search"
           placeholder="Search"
           className="search-box"
+          id={Id?"search-box2":""}
           onChange={(e) => {}}
         />
         <FaBars
@@ -30,7 +31,8 @@ const Navbar = () => {
           <NavLink
             exact
             to="/"
-           
+            
+
             className="NavLink"
             activeStyle={{ color: "#15cdfc" }}
           >

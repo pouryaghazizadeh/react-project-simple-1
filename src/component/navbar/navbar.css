@@ -1,5 +1,5 @@
 #div-compo {
-  height: 400px;
+  height: 295px;
 }
 
 /* this style is for nav that have h1 and navLink */
@@ -17,50 +17,68 @@
 
 /* style for h1 */
 .name-web {
-    color: #fff;  
+  color: #fff;
   display: flex;
   align-self: flex-start;
   margin: 14px;
 }
+#name-web2{
+  padding: 0;
+  position: absolute;
+}
 /* sstyle for search box */
 .search-box {
-    width: 200px;
-    height: 35px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    margin: 20px;
+  width: 200px;
+  height: 35px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin: 20px;
+  display: flex;
 }
-
+#search-box2 {
+  display: block;
+  display: flex;
+  justify-content: center;
+  width:100%;
+ 
+  margin-left:10%;
+ 
+  margin-top: 70px;
+  margin-right: 70px;
+justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* this style for berger navbae */
 .Bars {
-    display: none;
+  display: none;
   color: #fff;
-
 }
 /* this style for div that have navlink */
 .nave-menu {
-    display: flex;
+  display: flex;
   align-items: center;
   margin-right: 24px;
 }
 #nave-menu2 {
-    position: absolute;
-    top: 88px;
-    left: 0px;
-    height: 200px;
-    width: 100vw;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    font-size: 25px;
+  position: absolute;
+  /* top: 88px; */
+  top: 130px;
+  left: 0px;
+  height: 300 px;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
 }
 /* this is NavLinlk style */
 .NavLink {
-    color: #fff;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -73,12 +91,11 @@
   color: #15cdfc;
 }
 
-
 /* thi is a style for NaveLink Login */
-.Log-in{
-    text-decoration: none;
-    color: #fff;
-
+.Log-in {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
 }
 .Log-in:hover {
   color: #000000;
@@ -88,27 +105,24 @@
   border-radius: 4px;
 }
 
-
 /* media for navbar monile */
 @media screen and (max-width: 768px) {
-    .Bars {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 75%);
-        font-size: 1.8rem;
-        cursor: pointer;
-      }
-      .nave-menu{
-        display: none;
-      }
+  .Bars {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .nave-menu {
+    display: none;
+  }
+  .search-box {
+    display: none;
+  }
 }
-
-
-
-
-
 
 /*  */
 
@@ -127,8 +141,7 @@
   #logo2 {
     margin-right: 25vw;
   }
-  #nave-menu2{
- 
+  #nave-menu2 {
     background-color: #000;
     top: 0px;
     height: 100%;

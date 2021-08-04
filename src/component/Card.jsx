@@ -32,7 +32,7 @@ const DIVCARD = styled.div`
   width: 310px;
   height: 500px;
   padding: 6px;
-  background-color: blue;
+  background-color:#000;
   margin: 4px;
   display: flex;
   justify-content: center;
