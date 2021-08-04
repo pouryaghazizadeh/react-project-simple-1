@@ -3,27 +3,45 @@
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import "../navbar/navbar.css";
+import { useState } from "react";
+
 //
 //
 const Navbar = () => {
+  const [Id, setId] = useState(false);
   return (
-    <div>
-      <nav className="mother-nav">
-        <h1>TvMaze</h1>
-        <input type="search" placeholder="Search" className="search-box" onChange={(e) => {}} />
-        <FaBars className="Bars" onClick={() => {}} />
+    <div  id={Id ? "div-compo" : ""}>
+      <nav className="mother-nav" id={Id ? "mother-nav2" : ""}>
+        <h1 className="name-web" id={Id? "name-web2":""}>TvMaze</h1>
+        <input
+          type="search"
+          placeholder="Search"
+          className="search-box"
+          onChange={(e) => {}}
+        />
+        <FaBars
+          className="Bars"
+          onClick={() => {
+            setId(!Id);
+          }}
+        />
 
-        <div className="nave-menu">
+        <div className="nave-menu" id={Id ? "nave-menu2":""}>
           <NavLink
             exact
             to="/"
+            id={Id ? "NavLink2" : ""}
             className="NavLink"
-            activeStyle={{ color:"#15cdfc" }}
+            activeStyle={{ color: "#15cdfc" }}
           >
             Home
           </NavLink>
-          <NavLink exact to="/About" className="NavLink"
-          activeStyle={{ color:"#15cdfc" }}>
+          <NavLink
+            exact
+            to="/About"
+            className="NavLink"
+            activeStyle={{ color: "#15cdfc" }}
+          >
             About
           </NavLink>
           <NavLink exact to="/Login" className="Log-in">
