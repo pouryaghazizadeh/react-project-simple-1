@@ -1,5 +1,7 @@
 #div-compo {
-  height: 295px;
+  height: 238px;
+  /* position: fixed; */
+ 
 }
 
 /* this style is for nav that have h1 and navLink */
@@ -10,9 +12,13 @@
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
+  
+
 }
 #mother-nav2 {
-  height: 287px;
+ 
+  height: 240px;
+
 }
 
 /* style for h1 */
@@ -22,7 +28,7 @@
   align-self: flex-start;
   margin: 14px;
 }
-#name-web2{
+#name-web2 {
   padding: 0;
   position: absolute;
 }
@@ -40,13 +46,11 @@
   display: block;
   display: flex;
   justify-content: center;
-  width:100%;
- 
-  margin-left:10%;
- 
+  width: 100%;
+  margin-left: 10%;
   margin-top: 70px;
   margin-right: 70px;
-justify-content: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +69,6 @@ justify-content: center;
 }
 #nave-menu2 {
   position: absolute;
-  /* top: 88px; */
   top: 130px;
   left: 0px;
   height: 300 px;
@@ -74,7 +77,7 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 25px;
+  /* font-size: 25px; */
 }
 /* this is NavLinlk style */
 .NavLink {
@@ -90,19 +93,19 @@ justify-content: center;
 .NavLink:hover {
   color: #15cdfc;
 }
-
 /* thi is a style for NaveLink Login */
 .Log-in {
   text-decoration: none;
   color: #fff;
-  font-size: 25px;
+  padding: 7px;
 }
 .Log-in:hover {
   color: #000000;
-  background: #fff;
+  background: #15cdfc;
   height: 40px;
-  width: 50px;
+  width: 57px;
   border-radius: 4px;
+  padding: 7px;
 }
 
 /* media for navbar monile */
@@ -138,9 +141,9 @@ justify-content: center;
     align-self: flex-end;
     height: 88px;
   }
-  #logo2 {
+  /* #logo2 {
     margin-right: 25vw;
-  }
+  } */
   #nave-menu2 {
     background-color: #000;
     top: 0px;
@@ -149,7 +152,7 @@ justify-content: center;
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-left: 24px;
+    margin-left: 54px;
     color: #fff;
     align-items: center;
     text-decoration: none;
@@ -157,5 +160,11 @@ justify-content: center;
     cursor: pointer;
     align-self: flex-end;
     font-size: 15px;
+  }
+  #search-box2 {
+    margin-top: 20px;
+    width: 200px;
+    height: 35px;
+    margin-left: 220px;
   }
 }
