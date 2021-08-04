@@ -2,11 +2,13 @@ import SearchBox from "./SearchBox";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { useState } from "react";
-const Navbar = ({getData}) => {
-  const[data,setdata]=useState("")
+//
+//
+const Navbar = ({ getData }) => {
+  const [data, setdata] = useState("");
   const proop = (input) => {
     setdata(input);
-    getData(data)
+    getData(data);
   };
 
   return (
