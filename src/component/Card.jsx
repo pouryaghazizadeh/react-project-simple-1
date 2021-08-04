@@ -1,4 +1,4 @@
-import styled from "styled-components";
+// import styled from "styled-components";
 import Data from "../db/data.json";
 import "../component/card.css"
 // import { useState } from "react";
@@ -11,31 +11,31 @@ const Card = ({value}) => {
   //   })
   
   return (
-    <CARD>
+    <div className="container-card">
     
  
       {Data.map((data, index) => {
         return (
           <div key={index} className="div-cards">
-            <H2>
+            <h2 className = "title">
               {data.name}
               {`S${data.season}E${data.number}`}
-            </H2>
-            <IMG src={data.image.original} alt={data.name} />
-            <P> {data.summary.split("</p>").join("").replace("<p>", "")}</P>
+            </h2>
+            <img src={data.image.original} alt={data.name}  className = "img-card"/>
+            <p className = "Description-card"> {data.summary.split("</p>").join("").replace("<p>", "")}</p>
           </div>
         );
       })}
-    </CARD>
+    </div>
   );
     };
 // CARD tag thats means a div with all cards
-const CARD = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-around;
-`;
+// const CARD = styled.div`
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   justify-content: space-around;
+// `;
 
 // this tag is a  div card that have img title and...
 // const DIVCARD = styled.div`
@@ -49,22 +49,22 @@ const CARD = styled.div`
 //   flex-wrap: wrap;
 // `;
 // H2 is a h2 for title card
-const H2 = styled.h2`
-  color: white;
-  margin: 9px;
-  font-size: 20px;
-`;
+// const H2 = styled.h2`
+//   color: white;
+//   margin: 9px;
+//   font-size: 20px;
+// `;
 // IMG is a tag img
-const IMG = styled.img`
-  width: 290px;
-  height: 200px;
-  margin: 9px;
-`;
+// const IMG = styled.img`
+//   width: 290px;
+//   height: 200px;
+//   margin: 9px;
+// `;
 // P is a p tag for write summary
-const P = styled.p`
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-`;
+// const P = styled.p`
+//   color: white;
+//   display: flex;
+//   flex-wrap: wrap;
+// `;
 
 export default Card;
