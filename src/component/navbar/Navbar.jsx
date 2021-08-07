@@ -12,7 +12,7 @@ const Navbar = () => {
   const [data, setData] = useState("");
 
   return (
-    <div id={Id ? "div-compo" : ""}>
+    <div  className = "div-compo"id={Id ? "div-compo2" : ""}>
       <nav className="mother-nav" id={Id ? "mother-nav2" : ""}>
         <h1 className="name-web" id={Id ? "name-web2" : ""}>
           TvMaze

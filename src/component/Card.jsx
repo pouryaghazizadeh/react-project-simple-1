@@ -2,7 +2,9 @@
 import "../component/card.css";
 // import { useState, useEffect } from "react";
 const Card = () => {
-  return<></>
+  return<>
+    
+  </>
 
   // const [error, setError] = useState(null); //this use state is for check error
   // const [isLoaded, setIsLoaded] = useState(false); //this use state active when data loading
