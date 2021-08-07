@@ -1,9 +1,14 @@
 import Card from "./Card";
-const Home = () => {
+import { useState } from "react";
+const Home = ({value}) => {
+  const [data,setData] = useState("")
+  setData(value)
   return (
-    <>
-      <Card />
-    </>
+    // style={{"padding-top":"70px"}}
+     <div >
+      <Card data = {data}/>
+      
+     </div> 
   );
 };
 
