@@ -1,21 +1,21 @@
 import Navbar from "./component/navbar/Navbar";
-import { useState } from "react";
+// import { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./component/Home";
-import Aboute from "./component/About";
+import Aboute from "./component/about/About";
 function App() {
-  const[value,setValue]=useState("")
+  // const[value,setValue]=useState("")
 
-  const getData = (Id) => {
-    setValue(Id);
+  // const getData = (Id) => {
+  //   setValue(Id);
     // console.log(value)
     // console.log(data);
-  };
+  // };
  
   return (
     <>
 
-      <Navbar getData ={getData}/>
+      <Navbar />
       <Switch>
         {/* <Route path="/" exact component={Home} /> */}
         {/* <Route
@@ -24,10 +24,10 @@ function App() {
           render={(props) => <Home  {...props}  getData={getData} />}
         /> */}
         <Route path="/" exact >
-          <Home  value={value}/>
+          <Home  />
         </Route>
         
-        <Route path="/Aboute" component={Aboute} />
+        <Route path="/About" component={Aboute} />
       </Switch>
     </>
   );
