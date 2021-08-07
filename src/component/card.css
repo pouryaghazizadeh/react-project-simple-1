@@ -1,43 +1,39 @@
 /* this file is style for Card.jsx and Home.js */
 
-
-
-
 /* style Card.js */
 /* style for mother div vard */
-.div-cards{
-    width: 310px;
+.div-cards {
+  width: 310px;
   height: 500px;
   padding: 6px;
-  background-color:#000;
+  background-color: #000;
   margin: 4px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 /* style for h2 title */
-.title{
-    color: white;
+.title {
+  color: white;
   margin: 9px;
   font-size: 20px;
 }
 /* this style for img cards */
-.img-card{
-    width: 290px;
-    height: 200px;
-    margin: 9px;
+.img-card {
+  width: 290px;
+  height: 200px;
+  margin: 9px;
 }
 /*this style is for Description cards(p Tag) */
-.Description-card{
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
+.Description-card {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* this style is for div tag that have all cards */
-.container-card{
-    display: flex;
+.container-card {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;

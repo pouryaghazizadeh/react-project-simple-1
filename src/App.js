@@ -6,10 +6,10 @@ import Aboute from "./component/About";
 function App() {
   const[value,setValue]=useState("")
 
-  const getData = (Id,data) => {
+  const getData = (Id) => {
     setValue(Id);
     // console.log(value)
-    console.log(data);
+    // console.log(data);
   };
  
   return (
