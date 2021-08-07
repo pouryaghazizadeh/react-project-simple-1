@@ -16,7 +16,7 @@
   height: 70px;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   /* padding: 0.5rem calc((100vw - 1000px) / 2); */
   z-index: 10;
@@ -33,7 +33,7 @@
   color: #fff;
   display: flex;
   align-self: flex-start;
-  margin-top: 7px;
+  margin: 7px 10vw 0px 7px
 }
 #name-web2 {
   padding: 0;
@@ -41,27 +41,32 @@
 }
 /* sstyle for search box */
 .search-box {
+  background: #15cdfc;
   width: 200px;
   height: 35px;
   border-radius: 4px;
   border: none;
   outline: none;
-  /* margin-top: 9px; */
-
+  margin:0px 10vw 0px 0px;
   display: flex;
+  font-size:large;
 }
 #search-box2 {
+  background: #15cdfc;
+
   display: block;
   display: flex;
+text-align: center;
   justify-content: center;
   width: 100%;
-  margin-left: 10%;
-  margin-top: 70px;
+  margin-left: 60px;
+  margin-top: 10px;
   margin-right: 70px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 }
 
 /* this style for berger navbae */
@@ -73,18 +78,20 @@
 .nave-menu {
   display: flex;
   align-items: center;
-  margin-right: 24px;
+  margin: 0.5rem calc((100vw - 550px) / 2);
 }
 #nave-menu2 {
   position: absolute;
-  top: 130px;
-  left: 0px;
+  top: 158px;
+  left: -9px;
   height: 300 px;
   width: 100vw;
   background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0px;
+  
   /* font-size: 25px; */
 }
 /* this is NavLinlk style */
@@ -96,7 +103,7 @@
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  font-size: 15px;
+  font-size:large;
 }
 .NavLink:hover {
   color: #15cdfc;
@@ -106,6 +113,7 @@
   text-decoration: none;
   color: #fff;
   padding: 7px;
+  font-size:large;
 }
 .Log-in:hover {
   color: #000000;
@@ -114,6 +122,7 @@
   width: 57px;
   border-radius: 4px;
   padding: 7px;
+ 
 }
 
 /* media for navbar monile */
@@ -150,7 +159,6 @@
     display: flex;
     align-self: flex-end;
     height: 88px;
-
     display: flex;
     justify-content: space-between;
   }
@@ -172,12 +180,13 @@
     padding: 0 1rem;
     cursor: pointer;
     align-self: flex-end;
-    font-size: 15px;
+    /* font-size: 15px; */
   }
   #search-box2 {
     margin-top: 20px;
     width: 200px;
     height: 35px;
     margin-left: 220px;
+    text-align:left;
   }
 }
