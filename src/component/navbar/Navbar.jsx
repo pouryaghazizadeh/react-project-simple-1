@@ -7,22 +7,24 @@ import { useState } from "react";
 
 //
 //
-const Navbar = ({getData}) => {
+const Navbar = () => {
   const [Id, setId] = useState(false);
-  const[data,setData] = useState("")
-  getData(Id,data)
+  const [data, setData] = useState("");
+
   return (
-    <div  id={Id ? "div-compo" : ""}>
+    <div id={Id ? "div-compo" : ""}>
       <nav className="mother-nav" id={Id ? "mother-nav2" : ""}>
-        <h1 className="name-web" id={Id? "name-web2":""}>TvMaze</h1>
+        <h1 className="name-web" id={Id ? "name-web2" : ""}>
+          TvMaze
+        </h1>
         <input
           type="search"
           value={data}
           placeholder="Search"
           className="search-box"
-          id={Id?"search-box2":""}
+          id={Id ? "search-box2" : ""}
           onChange={(e) => {
-            setData(e.target.value)
+            setData(e.target.value);
           }}
         />
         <FaBars
@@ -32,12 +34,10 @@ const Navbar = ({getData}) => {
           }}
         />
 
-        <div className="nave-menu" id={Id ? "nave-menu2":""}>
+        <div className="nave-menu" id={Id ? "nave-menu2" : ""}>
           <NavLink
             exact
             to="/"
-
-
             className="NavLink"
             activeStyle={{ color: "#15cdfc" }}
           >
@@ -57,36 +57,6 @@ const Navbar = ({getData}) => {
         </div>
       </nav>
     </div>
-    // <>
-    //   <Div>
-    //     <div style={HSstyle}>
-    //       <H1>TvMaze</H1>
-
-    //       <SearchBox  />
-    //     </div>
-    //     <Ulstyle>
-    //       <Li>
-    //
-    //
-    //       </Li>
-    //       <Li>
-    //         <NavLink
-    //           to="/Aboute"
-    //           style={NnLink}
-    //           activeStyle={{ color: "white" }}
-    //         >
-
-    //           about
-    //         </NavLink>
-    //       </Li>
-    //       <Li>
-    //         <NavLink to="Login" style={NnLink} activeStyle={{ color: "white" }}>
-    //           Login
-    //         </NavLink>
-    //       </Li>
-    //     </Ulstyle>
-    //   </Div>
-    // </>
   );
 };
 

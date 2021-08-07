@@ -1,12 +1,12 @@
 import Card from "./Card";
-import { useState } from "react";
-const Home = ({value}) => {
-  const [data,setData] = useState("")
-  setData(value)
+// import { useState } from "react";
+const Home = () => {
+  // const [data,setData] = useState("")
+  // setData(value)
   return (
     // style={{"padding-top":"70px"}}
      <div >
-      <Card data = {data}/>
+      <Card />
       
      </div> 
   );

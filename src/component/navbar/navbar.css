@@ -1,7 +1,11 @@
+*{
+ box-sizing: border-box;
+}
 #div-compo {
   height: 239px;
   /* position: fixed; */
   width: 100%;
+
 }
 
 /* this style is for nav that have h1 and navLink */
@@ -28,9 +32,10 @@
   color: #fff;
   display: flex;
   align-self: flex-start;
-  margin: 14px;
+margin-top: 7px;
 }
 #name-web2 {
+
   padding: 0;
   position: absolute;
 }
@@ -41,7 +46,8 @@
   border-radius: 4px;
   border: none;
   outline: none;
-  margin: 20px;
+  margin-top: 9px;
+ 
   display: flex;
 }
 #search-box2 {
