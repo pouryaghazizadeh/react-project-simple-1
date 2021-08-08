@@ -1,18 +1,46 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.mother-container {
 }
-
-.container-about{
+.card-about {
   display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  flex-wrap: wrap;
-
+  background-color: yellow;
+  width: 80vw;
+  height: 400px;
 }
-.container {
-  width: 100vw;
-  height: 100%;
-  
+.description-div{
+  width: 70vw;
+}
+.description {
+  font-size:xx-large;
+}
+.title-about {
+}
+.button-LinkTo-TvMaze {
+}
+.image-tvshow-about {
+  width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .mother-container {
+    justify-content: center;
+  }
+  .card-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: yellow;
+    width: 300px;
+    height: 450px;
+    margin-left: 25vw;
+  }
+  .description {
+    font-size:large;
+  }
+
+
+
+
+
+
+
 }
