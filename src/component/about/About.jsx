@@ -2,8 +2,9 @@ import "./about.css";
 const Aboute = () => {
   return (
     <div className="mother-container">
-      <h2>TvMaze Api</h2>
+      <h2 className="title-about1">TvMaze Api</h2>
       <div className="card-about">
+        <h2 className="title-about2">TvMaze Api</h2>
         <img
           className="image-tvshow-about"
           alt="logo TvMaze"
@@ -12,12 +13,13 @@ const Aboute = () => {
         <div className="description-div">
           <p className="description">
             <b>
-              this app use api from Tvmaze api. Tvmaze is a website that
+              this app use api from Tvmaze. Tvmaze is a website that
               Presentation series,movies and also free api for developers if you
               want more information please click on this button.
             </b>
           </p>
-          <button className="button-LinkTo-TvMaze">Click</button>
+          {/* <button className="button-LinkTo-TvMaze">Click</button> */}
+          <button type="button" className="btn btn-primary " id = "button-link-tvmaze">Primary</button>
         </div>
       </div>
     </div>
