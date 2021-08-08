@@ -1,13 +1,15 @@
+
 * {
   box-sizing: border-box;
 }
-.div-compo{
+.div-compo {
   width: 100vw;
   height: 239px;
 }
 #div-compo2 {
+  width: 100vw;
   height: 239px;
-  width: 100%;
+
 }
 
 /* this style is for nav that have h1 and navLink */
@@ -16,57 +18,52 @@
   height: 70px;
   width: 100vw;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   /* padding: 0.5rem calc((100vw - 1000px) / 2); */
   z-index: 10;
   position: fixed;
-  /* width: 100%; */
 }
 #mother-nav2 {
-  height: 240px;
+  height: 253px;
   width: 100vw;
+ 
 }
 
 /* style for h1 */
 .name-web {
-  color: #fff;
+  /* color: #fff; */
+  color: #3d948b;
   display: flex;
   align-self: flex-start;
-  margin: 7px 10vw 0px 7px
+  margin: 7px 10vw 0px 9px;
 }
 #name-web2 {
   padding: 0;
   position: absolute;
+
 }
 /* sstyle for search box */
 .search-box {
-  background: #15cdfc;
   width: 200px;
   height: 35px;
   border-radius: 4px;
   border: none;
   outline: none;
-  margin:0px 10vw 0px 0px;
+  margin: 0px 10vw 0px 0px;
   display: flex;
-  font-size:large;
+  font-size: large;
 }
 #search-box2 {
-  background: #15cdfc;
-
   display: block;
   display: flex;
-text-align: center;
+  text-align: center;
   justify-content: center;
   width: 100%;
-  margin-left: 60px;
-  margin-top: 10px;
-  margin-right: 70px;
+  margin: 10px 70px 0px 60px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
 
 /* this style for berger navbae */
@@ -91,7 +88,7 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   margin: 0px;
-  
+
   /* font-size: 25px; */
 }
 /* this is NavLinlk style */
@@ -103,7 +100,7 @@ text-align: center;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  font-size:large;
+  font-size: large;
 }
 .NavLink:hover {
   color: #15cdfc;
@@ -113,7 +110,7 @@ text-align: center;
   text-decoration: none;
   color: #fff;
   padding: 7px;
-  font-size:large;
+  font-size: large;
 }
 .Log-in:hover {
   color: #000000;
@@ -122,7 +119,6 @@ text-align: center;
   width: 57px;
   border-radius: 4px;
   padding: 7px;
- 
 }
 
 /* media for navbar monile */
@@ -151,7 +147,6 @@ text-align: center;
   #div-compo2 {
     /* height: 88px; */
     height: 239px;
-
   }
 
   #mother-nav2 {
@@ -187,6 +182,6 @@ text-align: center;
     width: 200px;
     height: 35px;
     margin-left: 220px;
-    text-align:left;
+    text-align: left;
   }
 }

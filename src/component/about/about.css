@@ -1,18 +1,74 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+*
+.mother-container {
+  /* background-color: teal; */
+  height:100%;
+  width: 100%;
 }
-
-.container-about{
+.card-about {
   display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  flex-wrap: wrap;
+  background-color: black;
+  width:80vw;
+  height: 500px;
+  margin-left: 25px;
+}
+.description-div {
+  width: 70vw;
+}
+.description {
+  font-size: xx-large;
+  color: white;
+}
+.title-about1{
+  color: black;
+  display: block;
 
 }
-.container {
-  width: 100vw;
-  height: 100%;
-  
+.title-about2{
+  display: none;
+}
+
+.image-tvshow-about {
+  width: 400px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .title-about2{
+    display:block;
+    color: white;
+  }
+  .title-about1{
+    display:none;
+  }
+  .mother-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-about {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 350px;
+    height:90vh;
+    margin-left: 0;
+  }
+  .description {
+    font-size: large;
+  }
+
+  .image-tvshow-about {
+    width: 400px;
+    margin: 4px;
+  }
+#button-link-tvmaze{
+  margin-left:20vw;
+
+}
+
 }

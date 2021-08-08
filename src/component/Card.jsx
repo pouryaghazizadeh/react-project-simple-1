@@ -3,7 +3,7 @@ import "../component/card.css";
 // import { useState, useEffect } from "react";
 const Card = () => {
   return<>
-    
+    <h1>hhhhhhhh<br/>fffffffffff</h1>
   </>
 
   // const [error, setError] = useState(null); //this use state is for check error
