@@ -1,6 +1,8 @@
+/* navbars tag have class and id id when is active that we have mobile style */
 * {
   box-sizing: border-box;
 }
+/* is first div that have all tags */
 .div-compo {
   width: 100vw;
   height: 239px;
@@ -10,14 +12,14 @@
   height: 239px;
 }
 
-/* this style is for nav that have h1 and navLink */
+/* this style is for nav that have h1 and navLink  and search box*/
 .mother-nav {
+  /* padding: 0.5rem calc((100vw - 1000px) / 2); */
   background: #000;
   height: 80px;
   width: 100vw;
   display: flex;
   align-items: center;
-  /* padding: 0.5rem calc((100vw - 1000px) / 2); */
   z-index: 10;
   position: fixed;
 }
@@ -35,7 +37,6 @@
   margin: 7px 10vw 0px 9px;
 }
 #name-web2 {
-  padding: 0;
   position: absolute;
 }
 /* sstyle for search box */
@@ -49,18 +50,16 @@
   display: flex;
   font-size: large;
 }
-#search-box2 {
+/* #search-box2 {
   display: block;
   display: flex;
   text-align: center;
-  justify-content: center;
   width: 100%;
   margin: 10px 70px 0px 60px;
   justify-content: center;
-  display: flex;
   flex-direction: column;
   align-items: center;
-}
+}  */
 
 /* this style for berger navbae */
 .Bars {
@@ -119,6 +118,16 @@
 
 /* media for navbar monile */
 @media screen and (max-width: 768px) {
+  #search-box2 {
+    display: block;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 10px 70px 0px 60px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   .Bars {
     display: block;
     position: absolute;
@@ -136,20 +145,51 @@
   }
 }
 
-/* 
+@media screen and (min-width: 768px) {
 
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 
 @media screen and (min-width: 768px) {
   #div-compo2 {
+    width: 100vw;
     height: 239px;
   }
+
   #mother-nav2 {
     padding: 0.5rem calc((100vw - 1000px) / 2);
-    display: flex;
     align-self: flex-end;
-    height: 88px;
+    height: 80px;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
   }
   #nave-menu2 {
     background-color: #000;
@@ -168,17 +208,22 @@
     align-self: flex-end;
   }
   #search-box2 {
-    margin-top: 20px;
     width: 200px;
     height: 35px;
-    margin-left: 220px;
     text-align: left;
+
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 0px 5vw 0px 0px;
+    display: flex;
+    font-size: large;
   }
-}
 
- */
-@media screen and (min-width: 768px) {
-
-
-  
-}
+  #name-web2 {
+    color: #15cdfc;
+    display: flex;
+    align-self: flex-start;
+    margin: 7px 10vw 0px 9px;
+  }
+} */
