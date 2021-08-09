@@ -7,6 +7,7 @@ import { useState } from "react";
 
 //
 //
+
 const Navbar = () => {
   const [Id, setId] = useState(false);
   const [data, setData] = useState("");
@@ -56,6 +57,7 @@ const Navbar = () => {
           </NavLink>
         </div>
       </nav>
+  
     </div>
   );
 };

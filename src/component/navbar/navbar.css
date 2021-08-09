@@ -1,3 +1,5 @@
+/* for our navbar we have tow Different style class and id. id when is active that we have mobile screen */
+
 * {
   box-sizing: border-box;
 }
@@ -17,7 +19,6 @@
   width: 100vw;
   display: flex;
   align-items: center;
-  /* padding: 0.5rem calc((100vw - 1000px) / 2); */
   z-index: 10;
   position: fixed;
 }
@@ -28,7 +29,6 @@
 
 /* style for h1 */
 .name-web {
-  /* color: #fff; */
   color: #15cdfc;
   display: flex;
   align-self: flex-start;
@@ -136,20 +136,34 @@
   }
 }
 
-/* 
-
-
 @media screen and (min-width: 768px) {
   #div-compo2 {
+    width: 100vw;
     height: 239px;
   }
   #mother-nav2 {
-    padding: 0.5rem calc((100vw - 1000px) / 2);
     display: flex;
-    align-self: flex-end;
+    align-items: center;
     height: 88px;
     display: flex;
     justify-content: space-between;
+  }
+  #name-web2 {
+    color: #15cdfc;
+    display: flex;
+    align-self: flex-start;
+    margin: 15px 10vw 0px 9px;
+  }
+  #search-box2 {
+    width: 200px;
+    height: 35px;
+    text-align: left;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 0px 10vw 0px 20vw;
+    display: flex;
+    font-size: large;
   }
   #nave-menu2 {
     background-color: #000;
@@ -159,26 +173,11 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-left: 54px;
+    margin: 0.5rem calc((100vw - 550px) / 2);
     color: #fff;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
     cursor: pointer;
     align-self: flex-end;
   }
-  #search-box2 {
-    margin-top: 20px;
-    width: 200px;
-    height: 35px;
-    margin-left: 220px;
-    text-align: left;
-  }
-}
-
- */
-@media screen and (min-width: 768px) {
-
-
-  
 }

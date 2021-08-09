@@ -1,10 +1,53 @@
-// import Data from "../db/data.json";
+import Data from "../db/data.json";
 import "../component/card.css";
-// import { useState, useEffect } from "react";
+// import { useState } from "react";
+// import { useContext } from "react";
+
 const Card = () => {
-  return<>
-    <h1>hhhhhhhh<br/>fffffffffff</h1>
-  </>
+
+  // const [searchParam] = useState(["summary", "name"])
+  // const[search ,setSearch] = useState("")
+
+  // const  search =()=>{
+  //   return(
+  //     Data.filter(()=>{
+  //       return(
+
+  //         searchParam.some((newItem)=>{
+  //           return(
+  //             <></>
+
+  //           )
+
+  //         })
+  //       )
+  //     })
+
+  //   )
+  // }
+  return (
+    <div className="container-card">
+      {Data.map((data, index) => {
+        return (
+          <div key={index} className="div-cards">
+            <h2 className="title">
+              {data.name}
+              {`S${data.season}E${data.number}`}
+            </h2>
+            <img
+              src={data.image.original}
+              alt={data.name}
+              className="img-card"
+            />
+            <p className="Description-card">
+              {" "}
+              {data.summary.split("</p>").join("").replace("<p>", "")}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  );
 
   // const [error, setError] = useState(null); //this use state is for check error
   // const [isLoaded, setIsLoaded] = useState(false); //this use state active when data loading
@@ -85,34 +128,32 @@ const Card = () => {
   //     </div>
   //   );
   // }
-  
-  }
+};
 
-  // return (
+// return (
 
-
-  // <div className="container-card">
-  //   {Data.map((data, index) => {
-  //     return (
-  //       <div key={index} className="div-cards">
-  //         <h2 className="title">
-  //           {data.name}
-  //           {`S${data.season}E${data.number}`}
-  //         </h2>
-  //         <img
-  //           src={data.image.original}
-  //           alt={data.name}
-  //           className="img-card"
-  //         />
-  //         <p className="Description-card">
-  //           {" "}
-  //           {data.summary.split("</p>").join("").replace("<p>", "")}
-  //         </p>
-  //       </div>
-  //     );
-  //   })}
-  // </div>
-  // );
+// <div className="container-card">
+//   {Data.map((data, index) => {
+//     return (
+//       <div key={index} className="div-cards">
+//         <h2 className="title">
+//           {data.name}
+//           {`S${data.season}E${data.number}`}
+//         </h2>
+//         <img
+//           src={data.image.original}
+//           alt={data.name}
+//           className="img-card"
+//         />
+//         <p className="Description-card">
+//           {" "}
+//           {data.summary.split("</p>").join("").replace("<p>", "")}
+//         </p>
+//       </div>
+//     );
+//   })}
+// </div>
+// );
 // };
 
 export default Card;
