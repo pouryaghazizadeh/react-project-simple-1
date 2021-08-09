@@ -1,4 +1,5 @@
 import "./about.css";
+import { Link } from "react-router-dom";
 const Aboute = () => {
   return (
     <div className="mother-container">
@@ -18,8 +19,7 @@ const Aboute = () => {
               want more information please click on this button.
             </b>
           </p>
-          {/* <button className="button-LinkTo-TvMaze">Click</button> */}
-          <button type="button" className="btn btn-primary " id = "button-link-tvmaze">Primary</button>
+          <a  href= "https://www.tvmaze.com/" type="button" className="btn btn-primary " id = "button-link-tvmaze">Click</a>
         </div>
       </div>
     </div>
