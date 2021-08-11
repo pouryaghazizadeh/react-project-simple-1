@@ -15,7 +15,7 @@ const Aboute = () => {
           <p className="description">
             <b>
               this app use api from Tvmaze. Tvmaze is a website that
-              Presentation series,movies and also free api for developers if you
+              Presentation series and also free api for developers if you
               want more information please click on this button.
             </b>
           </p>

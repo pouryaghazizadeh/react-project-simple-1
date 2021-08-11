@@ -1,0 +1,31 @@
+.container-404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-404{
+    border-radius: 5px;
+    padding:8px;
+    width: 50vw;
+    height: 250px;
+    background-color: rgb(20, 20, 25);
+}
+
+.titel-404{
+    color: #ddd;
+
+
+}
+.description-404{
+    color: #ddd;
+   
+}
+#button-link-home-404{
+    margin:px 0px 0px 30wv;
+}
+@media screen and (max-width: 768px){
+#button-link-home-404{
+    margin:8vh 0px 0px 14vw;
+}
+}

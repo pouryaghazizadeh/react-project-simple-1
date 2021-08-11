@@ -1,19 +1,22 @@
 import Data from "../db/data.json";
 import "../component/card.css";
-// import { useState } from "react/cjs/react.development";
 
 const Card = ({ update }) => {
+  let tostring = "";
+  tostring.concat("", update);
+  tostring = tostring.toLocaleLowerCase().toString();
   let p = [];
   p.push(update);
 
   function FilterDataSearch() {
     if (p.length >= 1) {
       return Data.filter((i) => {
-        return i.name.match(p);
+        //i is index
+        return i.name && i.summary.match(p);
       });
     }
   }
-
+  
   return (
     <div className="container-card">
       {FilterDataSearch().map((data, index) => {
@@ -38,31 +41,5 @@ const Card = ({ update }) => {
     </div>
   );
 };
-
-// return (
-
-// <div className="container-card">
-//   {Data.map((data, index) => {
-//     return (
-//       <div key={index} className="div-cards">
-//         <h2 className="title">
-//           {data.name}
-//           {`S${data.season}E${data.number}`}
-//         </h2>
-//         <img
-//           src={data.image.original}
-//           alt={data.name}
-//           className="img-card"
-//         />
-//         <p className="Description-card">
-//           {" "}
-//           {data.summary.split("</p>").join("").replace("<p>", "")}
-//         </p>
-//       </div>
-//     );
-//   })}
-// </div>
-// );
-// };
 
 export default Card;
