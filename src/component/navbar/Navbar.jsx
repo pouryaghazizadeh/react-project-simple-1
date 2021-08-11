@@ -3,17 +3,20 @@
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import "../navbar/navbar.css";
-import { useState } from "react";
+import { useState} from "react";
+
 
 //
 //
 
-const Navbar = () => {
-  const [Id, setId] = useState(false);
+
+const Navbar = ({getData}) => {
+  const [Id, setId] = useState(false); //this is for berger and mobile screen
   const [data, setData] = useState("");
-
+  getData(data)
+  
   return (
-    <div  className = "div-compo"id={Id ? "div-compo2" : ""}>
+    <div className="div-compo" id={Id ? "div-compo2" : ""}>
       <nav className="mother-nav" id={Id ? "mother-nav2" : ""}>
         <h1 className="name-web" id={Id ? "name-web2" : ""}>
           TvMaze
@@ -57,7 +60,6 @@ const Navbar = () => {
           </NavLink>
         </div>
       </nav>
-  
     </div>
   );
 };
