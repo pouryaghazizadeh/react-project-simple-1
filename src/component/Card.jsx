@@ -3,12 +3,20 @@ import "../component/card.css";
 // import { useState } from "react/cjs/react.development";
 
 const Card = ({ update }) => {
+  let p = [];
+  p.push(update);
 
+  function FilterDataSearch() {
+    if (p.length >= 1) {
+      return Data.filter((i) => {
+        return i.name.match(p);
+      });
+    }
+  }
 
   return (
     <div className="container-card">
-        <h2>{update}</h2>
-      {Data.map((data, index) => {
+      {FilterDataSearch().map((data, index) => {
         return (
           <div key={index} className="div-cards">
             <h2 className="title">
