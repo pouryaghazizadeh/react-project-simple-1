@@ -14,8 +14,6 @@
 
 .titel-404{
     color: #ddd;
-
-
 }
 .description-404{
     color: #ddd;
@@ -25,6 +23,12 @@
     margin:px 0px 0px 30wv;
 }
 @media screen and (max-width: 768px){
+    #button-link-home-404{
+        margin:8vh 0px 0px 18vw;
+    }
+}
+
+@media screen and (max-width: 500px){
 #button-link-home-404{
     margin:8vh 0px 0px 14vw;
 }
