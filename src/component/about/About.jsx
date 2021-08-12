@@ -2,7 +2,7 @@ import "./about.css";
 
 const Aboute = ({mood,DarkMood}) => {
   return (
-    <div className="mother-container" style = {mood?DarkMood.bg.d:DarkMood.bg.l}>
+    <div className="mother-container" style = {mood?DarkMood.bg.d2:DarkMood.bg.l}>
       <h2 className="title-about1" style={mood?DarkMood.c.l:DarkMood.c.d }>TvMaze Api</h2>
       <div className="card-about" style = {mood?DarkMood.bg.l:DarkMood.bg.d}>
         <h2 className="title-about2"  style={mood?DarkMood.c.d:DarkMood.c.l }>TvMaze Api</h2>
@@ -19,7 +19,7 @@ const Aboute = ({mood,DarkMood}) => {
               want more information please click on this button.
             </b>
           </p>
-          <a  href= "https://www.tvmaze.com/" type="button" className="btn btn-primary " id = "button-link-tvmaze">Click</a>
+          <a  href= "https://www.tvmaze.com/" type="button" className="btn btn-primary " id = "button-link-tvmaze" style={mood?DarkMood.c.d:DarkMood.c.l }>Click</a>
         </div>
       </div>
     </div>

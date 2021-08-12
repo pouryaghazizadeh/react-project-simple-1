@@ -28,14 +28,14 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Home update={update} mood={mood} DarkMood={DarkMood} />
-          </Route>
+        </Route>
 
-        <Route path="/About"  >
-          <Aboute mood={mood} DarkMood={DarkMood}/>
+        <Route path="/About">
+          <Aboute mood={mood} DarkMood={DarkMood} />
         </Route>
 
         <Route path="/logIn">
-          <LogIn />
+          <LogIn mood={mood} DarkMood={DarkMood} />
         </Route>
 
         <Route component={PageNotFound} />
@@ -49,27 +49,32 @@ export default App;
 const DarkMood = {
   lightMood: {
     background: "#efefef",
-    color: "#1e1f25",
+    color: "#090d11",
   },
   darkMood: {
-    background: "#1e1f25",
+    background: "#090d11",
     color: "#efefef",
   },
   bg: {
     l: { background: "#efefef" },
-    d: { background: "#1e1f25" },
+    d: { background: "#090d11" },
+    d2: { background: "#1e1f25" },
   },
   c: {
     l: { color: "#efefef" },
-    d: { color: "#1e1f25" },
+    d: { color: "#090d11" },
+    d2:{color: "#1e1f25"}
   },
 
   search: {
     light: {
-      borderColor: "#1e1f25 ",
+      borderColor: "#090d11",
     },
     dark: {
       borderColor: "#efefef",
     },
   },
 };
+// #090d11
+
+//#1e1f25 first darker color

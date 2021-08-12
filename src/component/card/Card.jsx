@@ -18,11 +18,11 @@ const Card = ({ update,mood,DarkMood }) => {
   }
 
   return (
-    <div className="container-card" style = {mood ?DarkMood.darkMood:DarkMood.lightMood}>
+    <div className="container-card" style={mood?DarkMood.bg.d2:DarkMood.bg.l}>
       {FilterDataSearch().map((data, index) => {
         return (
-          <div key={index} className="div-cards" style={mood?DarkMood.lightMood:DarkMood.darkMood}>
-            <h2 className="title">
+          <div key={index} className="div-cards" style={mood?DarkMood.bg.l:DarkMood.bg.d} >
+            <h2 className="title" style = {mood?DarkMood.c.d:DarkMood.c.l}>
               {data.name}
               {`S${data.season}E${data.number}`}
             </h2>
@@ -31,7 +31,7 @@ const Card = ({ update,mood,DarkMood }) => {
               alt={data.name}
               className="img-card"
             />
-            <p className="Description-card">
+            <p className="Description-card" style = {mood?DarkMood.c.d:DarkMood.c.l}>
               {" "}
               {data.summary.split("</p>").join("").replace("<p>", "")}
             </p>
