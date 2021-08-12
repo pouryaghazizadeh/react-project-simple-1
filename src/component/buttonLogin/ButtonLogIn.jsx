@@ -1,13 +1,21 @@
-import "./buttonLogIn.css"
-
+import "./buttonLogIn.css";
 
 function ButtonLogIn() {
-    return (
-        <div>
-            <button class="custom-btn btn-3"><span>Read More3</span></button>
-            
-        </div>
-    )
+  return (
+    <div>
+      <div class="frame">
+        <button class="btn-logIn  primaryStyle">
+          <span class="span-logIn">Login</span>
+        </button>
+      </div>
+      {/* <div>
+      <button class="btn-logIn  primaryStyle">
+         Login
+        </button>
+      </div> */}
+      
+    </div>
+  );
 }
 
-export default ButtonLogIn
+export default ButtonLogIn;

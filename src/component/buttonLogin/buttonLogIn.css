@@ -1,0 +1,97 @@
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+.primaryStyle{
+     font-weight: 500; 
+     color: #fff; 
+    padding: 10px 25px; 
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    background: transparent;  /* this shuld change */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+     /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1); */
+}
+.btn-logIn{
+    background: rgb(0,172,238);
+    background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+      width: 130px;
+      height: 40px;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+}
+.span-logIn{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-logIn:before,
+.btn-logIn:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+ 
+}
+/* check */
+.btn-logIn:before{
+    height: 0%;
+    width: 2px;
+}
+.btn-logIn:after{
+    width: 0%;
+    height: 2px;
+}
+/*check */
+
+.btn-logIn:hover{
+    background: transparent;
+    box-shadow: none;
+}
+.btn-logIn:hover:before {
+    height: 100%;
+  }
+  .btn-logIn:hover:after {
+    height: 100%;
+  }
+  .span-logIn:hover{
+    color: rgba(2,126,251,1);
+ }
+ .span-logIn:before,
+.span-logIn:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.span-logIn:before {
+    width: 2px;
+    height: 0%;
+  }
+  .span-logIn:after {
+    width: 0%;
+    height: 2px;
+  }
+  .span-logIn:hover:before {
+    height: 100%;
+  }
+  .span-logIn:hover:after {
+    width: 100%;
+  }
