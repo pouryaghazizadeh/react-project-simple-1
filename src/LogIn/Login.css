@@ -30,11 +30,21 @@
   margin-left: 4px;
 }
 
-.titel-login {
+.title-login {
   font-size: xx-large;
 }
 
-.label-login {
-  font-size:xx-large;
-  margin-left: 4px;
+@media screen and (max-width: 550px){
+
+.container-box{
+  width: 96vw;
+  height: 93vh;
+}
+.box{
+  width: 99vw;
+  height: 70px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
 }
