@@ -60,7 +60,7 @@ const Navbar = ({getData,getMood,mood,DarkMood}) => {
           >
             About
           </NavLink>
-          <NavLink exact to="/Login" className="Log-in" style = {mood?DarkMood.c.d:DarkMood.c.l }>
+          <NavLink exact to="/Login"   activeStyle={{ color: "#15cdfc"}} className="Log-in" style = {mood?DarkMood.c.d:DarkMood.c.l }>
             Login
           </NavLink>
         </div>
