@@ -19,7 +19,7 @@ const Aboute = ({mood,DarkMood}) => {
               want more information please click on this button.
             </b>
           </p>
-          <a  href= "https://www.tvmaze.com/" type="button" className="btn btn-primary " id = "button-link-tvmaze">Click</a>
+          <a  href= "https://www.tvmaze.com/" type="button" className="btn btn-primary " id = "button-link-tvmaze" style={mood?DarkMood.c.d:DarkMood.c.l }>Click</a>
         </div>
       </div>
     </div>

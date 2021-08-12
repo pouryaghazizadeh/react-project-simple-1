@@ -5,7 +5,7 @@
 }
 .div-compo {
   width: 100vw;
-  height:100px;
+  height:80px;
 }
 #div-compo2 {
   width: 100vw;
@@ -139,13 +139,13 @@ background-color: none;
 
   #div-compo2 {
     width: 100vw;
-    height:100px;
+    height:80px;
     margin-bottom: 0px;
   }
   #mother-nav2 {
     display: flex;
     align-items: center;
-    height: 88px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
   }
