@@ -3,17 +3,9 @@ import "./buttonLogIn.css";
 function ButtonLogIn() {
   return (
     <div>
-      <div class="frame">
-        <button class="btn-logIn  primaryStyle">
-          <span class="span-logIn">Login</span>
-        </button>
-      </div>
-      {/* <div>
-      <button class="btn-logIn  primaryStyle">
-         Login
-        </button>
-      </div> */}
-      
+        <div className="frame">
+          <button className="custom-btn btn-16"><span>Login</span></button>
+          </div>
     </div>
   );
 }
