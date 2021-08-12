@@ -4,38 +4,30 @@ import Home from "./component/Home";
 import Aboute from "./component/about/About";
 import { useState } from "react/cjs/react.development";
 import  PageNotFound  from "./component/pageNotFound/PageNotFound";
+import LogIn from "./LogIn/LogIn";
 
 function App() {
-  //this object meked for chang mood color to dark and light
-  const DarkMood = {
-    lightMood:{
-      background: "#efefef",
-      color: "#1e1f25"
-    },
-    darkMood:{
-      background:"#1e1f25",
-      color:  "#efefef"  
-    }
-  }
   //this function meked for get value from search box
   const getData = (data) => {
     setUpdate(data);
   };
+  //this function meked for get mood from Button.jsx
   const getMood = (clickMood)=>{
     setMood(clickMood)
-
   }
-  const [update, setUpdate] = useState();//this is for value search box
-const[mood,setMood] = useState()
-console.log(mood);
+  const [update, setUpdate] = useState();//this is for update value search box
+const[mood,setMood] = useState()//this is for update value mood that is light or dark
   return (
     <>
-    <h4 style = {mood?DarkMood.lightMood:DarkMood.darkMood}>kkkkkkkkk</h4>
+   
 
-      <Navbar getData={getData} getMood={getMood} />
+      <Navbar getData={getData} getMood={getMood} mood={mood} DarkMood={DarkMood}/>
       <Switch>
         <Route path ="/" exact>
           <Home  update={update} />
+        </Route>
+        <Route path="/logIn">
+          <LogIn/>
         </Route>
 
         
@@ -47,3 +39,23 @@ console.log(mood);
 }
 
 export default App;
+  //this object meked for chang mood color to dark and light
+  const DarkMood = {
+    lightMood:{
+      background: "#efefef",
+      color: "#1e1f25"
+    },
+    darkMood:{
+      background:"#1e1f25",
+      color:  "#efefef"  
+    },
+    search:{
+      light:{
+        borderColor:"#1e1f25 ",
+      },dark:{
+        borderColor:"#efefef"
+      }
+
+     
+    }
+  }
