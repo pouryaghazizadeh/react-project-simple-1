@@ -1,14 +1,14 @@
 import "./PageNotFound.css";
 
-function PageNotFound() {
+function PageNotFound({mood,DarkMood}) {
   return (
-    <div className="container-404">
-      <div className="card-404">
-        <h3 className="titel-404">PageNotFound</h3>
+    <div className="container-404" style ={mood?DarkMood.bg.d2:DarkMood.bg.d2}>
+      <div className="card-404"  style ={mood?DarkMood.bg.l:DarkMood.bg.d}>
+        <h2 className="titel-404" style ={mood?DarkMood.c.d:DarkMood.c.l}>PageNotFound</h2>
 
-        <p className="description-404">
+        <h3 className="description-404" style ={mood?DarkMood.c.d:DarkMood.c.l}>
           It seems you are lost! click on this for come back home
-        </p>
+        </h3>
         <a
           href="/"
           type="button"

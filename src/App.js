@@ -38,7 +38,9 @@ function App() {
           <LogIn mood={mood} DarkMood={DarkMood} />
         </Route>
 
-        <Route component={PageNotFound} />
+        <Route>
+          <PageNotFound mood={mood} DarkMood={DarkMood} />
+        </Route>
       </Switch>
     </>
   );
@@ -63,7 +65,7 @@ const DarkMood = {
   c: {
     l: { color: "#efefef" },
     d: { color: "#090d11" },
-    d2:{color: "#1e1f25"}
+    d2: { color: "#1e1f25" },
   },
 
   search: {
