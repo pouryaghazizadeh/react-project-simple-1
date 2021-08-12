@@ -1,12 +1,13 @@
 /* this file is style for Card.jsx and Home.js */
 
-/* style Card.js */
+/* style Card.jsx */
+
 /* style for mother div vard */
 .div-cards {
   width: 310px;
   height: 500px;
   padding: 6px;
-  background-color: #000;
+  /* background-color: #000; */
   margin: 4px;
   display: flex;
   justify-content: center;
@@ -14,7 +15,7 @@
 }
 /* style for h2 title */
 .title {
-  color: white;
+  /* color: white; */
   margin: 9px;
   font-size: 20px;
 }
@@ -26,7 +27,7 @@
 }
 /*this style is for Description cards(p Tag) */
 .Description-card {
-  color: white;
+  /* color: white; */
   display: flex;
   flex-wrap: wrap;
 }

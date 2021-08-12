@@ -24,7 +24,7 @@
   position: fixed;
 }
 #mother-nav2 {
-  height: 253px;
+  height: 259px;
   width: 100vw;
 }
 
@@ -44,7 +44,7 @@ background-color: none;
   width: 200px;
   height: 35px;
   border-radius: 4px;
-  /* border: none; */
+  
   outline: none;
   margin: 0px 5vw 0px 0px;
   display: flex;
@@ -66,7 +66,7 @@ background-color: none;
 /* this style for berger navbae */
 .Bars {
   display: none;
-  color: #fff;
+  /* color: #fff; */
 }
 /* this style for div that have navlink */
 .nave-menu {
@@ -80,17 +80,16 @@ background-color: none;
   left: -9px;
   height: 300 px;
   width: 100vw;
-  background-color: #000;
+  /* background-color: none; */
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0px;
-
-  /* font-size: 25px; */
 }
+
 /* this is NavLinlk style */
 .NavLink {
-  color: #fff;
+  /* color: #fff; */
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -169,7 +168,7 @@ background-color: none;
     font-size: large;
   }
   #nave-menu2 {
-    background-color: #000;
+    /* background-color: #000; */
     top: 0px;
     height: 100%;
     width: 100vw;
@@ -177,10 +176,12 @@ background-color: none;
     display: flex;
     flex-direction: row;
     margin: 0.5rem calc((100vw - 550px) / 2);
-    color: #fff;
+    /* color: #fff; */
     align-items: center;
     text-decoration: none;
     cursor: pointer;
     align-self: flex-end;
   }
+
+
 }

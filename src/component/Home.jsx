@@ -1,8 +1,10 @@
 import Card from "./card/Card";
-const Home = ({ update }) => {
+const Home = ({ update,mood,DarkMood }) => {
   return (
-    <div>
-      <Card update={update} />
+    <div
+    style = {mood ?DarkMood.darkMood:DarkMood.lightMood}
+    >
+      <Card update={update}  mood={mood} DarkMood={DarkMood}  />
     </div>
   );
 };
