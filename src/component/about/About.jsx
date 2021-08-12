@@ -2,7 +2,7 @@ import "./about.css";
 
 const Aboute = ({mood,DarkMood}) => {
   return (
-    <div className="mother-container" style = {mood?DarkMood.bg.d:DarkMood.bg.l}>
+    <div className="mother-container" style = {mood?DarkMood.bg.d2:DarkMood.bg.l}>
       <h2 className="title-about1" style={mood?DarkMood.c.l:DarkMood.c.d }>TvMaze Api</h2>
       <div className="card-about" style = {mood?DarkMood.bg.l:DarkMood.bg.d}>
         <h2 className="title-about2"  style={mood?DarkMood.c.d:DarkMood.c.l }>TvMaze Api</h2>
