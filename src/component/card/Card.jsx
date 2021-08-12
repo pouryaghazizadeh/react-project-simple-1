@@ -1,7 +1,7 @@
 import Data from "../db/data.json";
 import "./card.css";
 
-const Card = ({ update }) => {
+const Card = ({ update,mood,DarkMood }) => {
   let tostring = "";
   tostring.concat("", update);
   tostring = tostring.toLocaleLowerCase().toString();
@@ -18,10 +18,10 @@ const Card = ({ update }) => {
   }
 
   return (
-    <div className="container-card">
+    <div className="container-card" style = {mood ?DarkMood.darkMood:DarkMood.lightMood}>
       {FilterDataSearch().map((data, index) => {
         return (
-          <div key={index} className="div-cards">
+          <div key={index} className="div-cards" style={mood?DarkMood.lightMood:DarkMood.darkMood}>
             <h2 className="title">
               {data.name}
               {`S${data.season}E${data.number}`}

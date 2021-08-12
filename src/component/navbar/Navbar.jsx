@@ -34,14 +34,16 @@ const Navbar = ({getData,getMood,mood,DarkMood}) => {
           }}
         />
         <FaBars
+        style={mood?DarkMood.lightMood:DarkMood.darkMood}
           className="Bars"
           onClick={() => {
             setId(!Id);
           }}
         />
 
-        <div className="nave-menu" id={Id ? "nave-menu2" : ""}>
+        <div className="nave-menu" id={Id ? "nave-menu2" : ""} style = {mood?DarkMood.bg.l:DarkMood.bg.d}>
           <NavLink
+          style={mood?DarkMood.c.d:DarkMood.c.l}
             exact
             to="/"
             className="NavLink"
@@ -50,6 +52,7 @@ const Navbar = ({getData,getMood,mood,DarkMood}) => {
             Home
           </NavLink>
           <NavLink
+           style={mood?DarkMood.c.d:DarkMood.c.l}
             exact
             to="/About"
             className="NavLink"
