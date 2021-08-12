@@ -104,12 +104,11 @@ background-color: none;
 /* thi is a style for NaveLink Login */
 .Log-in {
   text-decoration: none;
-  color: #fff;
   padding: 7px;
   font-size: large;
 }
 .Log-in:hover {
-  color: #000000;
+  color:#1e1f25;
   background: #15cdfc;
   height: 40px;
   width: 57px;

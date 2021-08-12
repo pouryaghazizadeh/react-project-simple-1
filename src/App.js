@@ -28,12 +28,16 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Home update={update} mood={mood} DarkMood={DarkMood} />
+          </Route>
+
+        <Route path="/About"  >
+          <Aboute mood={mood} DarkMood={DarkMood}/>
         </Route>
+
         <Route path="/logIn">
           <LogIn />
         </Route>
 
-        <Route path="/About" component={Aboute} />
         <Route component={PageNotFound} />
       </Switch>
     </>
