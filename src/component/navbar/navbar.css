@@ -5,16 +5,17 @@
 }
 .div-compo {
   width: 100vw;
-  height: 239px;
+  height:100px;
 }
 #div-compo2 {
   width: 100vw;
-  height: 239px;
+  height:80px;
+  margin-bottom: 180px;
 }
 
 /* this style is for nav that have h1 and navLink */
 .mother-nav {
-  background: #000;
+
   height: 80px;
   width: 100vw;
   display: flex;
@@ -29,7 +30,7 @@
 
 /* style for h1 */
 .name-web {
-  color: #15cdfc;
+background-color: none;
   display: flex;
   align-self: flex-start;
   margin: 7px 10vw 0px 9px;
@@ -43,7 +44,7 @@
   width: 200px;
   height: 35px;
   border-radius: 4px;
-  border: none;
+  /* border: none; */
   outline: none;
   margin: 0px 5vw 0px 0px;
   display: flex;
@@ -137,9 +138,11 @@
 }
 
 @media screen and (min-width: 768px) {
+
   #div-compo2 {
     width: 100vw;
-    height: 239px;
+    height:100px;
+    margin-bottom: 0px;
   }
   #mother-nav2 {
     display: flex;

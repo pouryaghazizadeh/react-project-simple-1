@@ -11,18 +11,19 @@ import Button from "../Button DarkMood/Button";
 //
 
 
-const Navbar = ({getData,getMood}) => {
+const Navbar = ({getData,getMood,mood,DarkMood}) => {
   const [Id, setId] = useState(false); //this is for berger and mobile screen
   const [data, setData] = useState("");
   getData(data)
   return (
-    <div className="div-compo" id={Id ? "div-compo2" : ""}>
-      <nav className="mother-nav" id={Id ? "mother-nav2" : ""}>
-        <h1 className="name-web" id={Id ? "name-web2" : ""}>
+    <div className="div-compo" id={Id ? "div-compo2" : ""} >
+      <nav className="mother-nav" id={Id ? "mother-nav2" : ""} style = {mood?DarkMood.lightMood:DarkMood.darkMood}>
+        <h1 className="name-web" id={Id ? "name-web2" : ""} style = {mood?DarkMood.lightMood:DarkMood.darkMood}>
           TvMaze
         </h1>
         <Button getMood = {getMood}/>
         <input
+        style = {mood?DarkMood.search.light:DarkMood.search.dark}
           type="search"
           value={data}
           placeholder="Search"
@@ -44,7 +45,7 @@ const Navbar = ({getData,getMood}) => {
             exact
             to="/"
             className="NavLink"
-            activeStyle={{ color: "#15cdfc" }}
+            activeStyle={{ color: "#15cdfc",border: "solid #15cdfc" }}
           >
             Home
           </NavLink>
@@ -52,7 +53,7 @@ const Navbar = ({getData,getMood}) => {
             exact
             to="/About"
             className="NavLink"
-            activeStyle={{ color: "#15cdfc" }}
+            activeStyle={{ color: "#15cdfc",border: "solid #15cdfc"  }}
           >
             About
           </NavLink>

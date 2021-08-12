@@ -1,5 +1,5 @@
 import Data from "../db/data.json";
-import "../component/card.css";
+import "./card.css";
 
 const Card = ({ update }) => {
   let tostring = "";
@@ -16,7 +16,7 @@ const Card = ({ update }) => {
       });
     }
   }
-  
+
   return (
     <div className="container-card">
       {FilterDataSearch().map((data, index) => {
