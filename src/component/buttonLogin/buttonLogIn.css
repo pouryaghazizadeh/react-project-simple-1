@@ -1,0 +1,14 @@
+.buton-login{
+    background-color:#15cdfc;
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+border: none;
+color:#efefef ;
+}
+.buton-login:hover{
+    color: #090d11;
+  
+   
+}
