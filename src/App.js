@@ -12,7 +12,7 @@ function App() {
     setUpdate(data);
   };
   //this function meked for get mood from Button.jsx
-  const getMood = (clickMood) => {
+  const getMood = ({clickMood}) => {
     setMood(clickMood);
   };
   const [update, setUpdate] = useState(); //this is for update value search box
