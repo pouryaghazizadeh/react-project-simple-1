@@ -10,8 +10,9 @@ import "../navbar/navbar.css";
 const Navbar = ({ getData, getMood, mood, DarkMood }) => {
   const [Id, setId] = useState(false); //this is for berger and mobile screen
   const [data, setData] = useState("");//this is for value search box
-
-    getData(data)
+useEffect(() => {
+  getData(data)}
+ )
 
   
 
