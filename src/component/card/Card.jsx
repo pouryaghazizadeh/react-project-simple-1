@@ -12,7 +12,8 @@ const Card = ({ update, mood, DarkMood }) => {
     if (p.length >= 1) {
       return Data.filter((i) => {
         //i is index
-        return i.name && i.summary.match(p);
+      return i= i.name && i.summary.match(p);
+      
       });
     }
   }
@@ -23,9 +24,9 @@ const Card = ({ update, mood, DarkMood }) => {
       style={mood ? DarkMood.bg.d2 : DarkMood.bg.l}
     >
       {FilterDataSearch().map((data, index) => {
-        if (data.length === 0) {
-          return <div style={{display: 'flex',alignItems: 'center',}}>
-            <h2 style ={{color: "red"}}>fffffffffffffffff</h2>
+        if (FilterDataSearch() === null) {
+          return <div>
+            <h2>fffffffffffffffff</h2>
           </div>;
         } else {
           return (

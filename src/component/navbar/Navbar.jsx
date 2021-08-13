@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import ButtonMood from "../Button DarkMood/ButtonMood";
@@ -9,8 +9,12 @@ import "../navbar/navbar.css";
 
 const Navbar = ({ getData, getMood, mood, DarkMood }) => {
   const [Id, setId] = useState(false); //this is for berger and mobile screen
-  const [data, setData] = useState("");
-  getData(data);
+  const [data, setData] = useState("");//this is for value search box
+useEffect(() => {
+  getData(data)}
+ )
+
+  
 
   return (
     <div className="div-compo" id={Id ? "div-compo2" : ""}>
