@@ -1,0 +1,10 @@
+.img-gameOfThrones{
+    width: 100%;
+    height: 500px;
+}
+@media screen and (max-width: 769px) {
+    .img-gameOfThrones{
+      
+        height: 250px;
+    }
+}
