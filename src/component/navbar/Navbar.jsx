@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import "../navbar/navbar.css";
 import { useState} from "react";
-import Button from "../Button DarkMood/Button";
+import ButtonMood from "../Button DarkMood/ButtonMood";
 
 
 //
@@ -17,11 +17,11 @@ const Navbar = ({getData,getMood,mood,DarkMood}) => {
   getData(data)
   return (
     <div className="div-compo" id={Id ? "div-compo2" : ""} >
-      <nav className="mother-nav" id={Id ? "mother-nav2" : ""} style = {mood?DarkMood.lightMood:DarkMood.darkMood}>
-        <h1 className="name-web" id={Id ? "name-web2" : ""} style = {mood?DarkMood.lightMood:DarkMood.darkMood}>
+      <nav className="mother-nav" id={Id ? "mother-nav2" : ""} style = {mood?DarkMood.bg.l:DarkMood.bg.d}>
+        <h1 className="name-web" id={Id ? "name-web2" : ""} style = {mood?DarkMood.c.d:DarkMood.c.l}>
           TvMaze
         </h1>
-        <Button getMood = {getMood}/>
+        <ButtonMood getMood = {getMood}/>
         <input
         style = {mood?DarkMood.search.light:DarkMood.search.dark}
           type="search"
@@ -34,7 +34,7 @@ const Navbar = ({getData,getMood,mood,DarkMood}) => {
           }}
         />
         <FaBars
-        style={mood?DarkMood.lightMood:DarkMood.darkMood}
+        style={mood?DarkMood.c.d:DarkMood.c.l}
           className="Bars"
           onClick={() => {
             setId(!Id);
