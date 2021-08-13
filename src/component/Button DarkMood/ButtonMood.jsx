@@ -1,11 +1,10 @@
 import "./buttonDarkMood.css";
-import { useState,useEffect } from "react";
+import { useState } from "react";
 const Button = ({ getMood }) => {
   const [clickMood, setClickMood] = useState(false);
-useEffect(() => {
+
   getMood(clickMood);
-}, [])
- 
+
   return (
     <div >
       <div className = "body-toggel">
@@ -20,4 +19,5 @@ useEffect(() => {
   );
 };
 
-export default Button;
+export default Button
+;

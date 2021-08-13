@@ -1,7 +1,7 @@
 .body-toggel{
     /* position: absolute; */
     margin-right: 10px;
-    background-color: aqua;
+    background-color: #2f3638;
     width: 70px;
     height: 30px;
     border-radius: 44px;
@@ -10,7 +10,7 @@
 
 .button-toggel{
      width: 29px;
-    height: 29px;
+    height: 30px;
     border-radius: 50%;
     outline: none;
     border-color:black; 

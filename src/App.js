@@ -1,20 +1,21 @@
-import Navbar from "./component/navbar/Navbar";
-import { Switch, Route } from "react-router-dom";
-import Home from "./component/Home";
-import Aboute from "./component/about/About";
+import { Route, Switch } from "react-router-dom";
 import { useState } from "react/cjs/react.development";
+import Aboute from "./component/about/About";
+import Home from "./component/Home";
+import Navbar from "./component/navbar/Navbar";
 import PageNotFound from "./component/pageNotFound/PageNotFound";
 import LogIn from "./LogIn/LogIn";
-
 function App() {
   //this function meked for get value from search box
   const getData = (data) => {
     setUpdate(data);
   };
   //this function meked for get mood from Button.jsx
-  const getMood = ({clickMood}) => {
+
+  const getMood = (clickMood ) => {
     setMood(clickMood);
   };
+
   const [update, setUpdate] = useState(); //this is for update value search box
   const [mood, setMood] = useState(); //this is for update value mood that is light or dark
   return (
@@ -50,7 +51,6 @@ function App() {
 export default App;
 //this object meked for chang mood color to dark and light
 const DarkMood = {
-
   bg: {
     l: { background: "#efefef" },
     d: { background: "#090d11" },
