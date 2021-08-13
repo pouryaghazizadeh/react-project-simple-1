@@ -20,7 +20,7 @@ const Navbar = ({ getData, getMood, mood, DarkMood }) => {
         style={mood ? DarkMood.bg.l : DarkMood.bg.d}
       >
         <div className="div-titel" id={Id ? "div-titel2" : ""}>
-          <h1 className="name-web">TvMaze</h1>
+          <h1 className="name-web" style = {mood?DarkMood.c.d:DarkMood.c.l}>TvMaze</h1>
           <ButtonMood getMood={getMood} />
         </div>
 
@@ -53,7 +53,7 @@ const Navbar = ({ getData, getMood, mood, DarkMood }) => {
             exact
             to="/"
             className="NavLink"
-            activeStyle={{ color: "#15cdfc", border: "solid #15cdfc" }}
+            activeStyle={{ color: "#538eff", border: "solid #15cdfc" }}
           >
             Home
           </NavLink>
@@ -62,7 +62,7 @@ const Navbar = ({ getData, getMood, mood, DarkMood }) => {
             exact
             to="/About"
             className="NavLink"
-            activeStyle={{ color: "#15cdfc", border: "solid #15cdfc" }}
+            activeStyle={{ color: "#538eff", border: "solid #15cdfc" }}
           >
             About
           </NavLink>

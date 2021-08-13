@@ -1,8 +1,14 @@
 /* this file is style for Card.jsx and Home.js */
+/* this style is for div tag that have all cards */
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  justify-content: space-around;
+}
 
-/* style Card.jsx */
-
-/* style for mother div vard */
+/* style for Card */
 .div-cards {
   width: 310px;
   height: 500px;
@@ -32,11 +38,3 @@
   flex-wrap: wrap;
 }
 
-/* this style is for div tag that have all cards */
-.container-card {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  justify-content: center;
-  justify-content: space-around;
-}
