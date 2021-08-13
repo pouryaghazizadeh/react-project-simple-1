@@ -1,18 +1,22 @@
 import { Route, Switch } from "react-router-dom";
+
 import { useState } from "react/cjs/react.development";
 import Aboute from "./component/about/About";
 import Home from "./component/Home";
 import Navbar from "./component/navbar/Navbar";
 import PageNotFound from "./component/pageNotFound/PageNotFound";
 import LogIn from "./LogIn/LogIn";
+
 function App() {
+
+
   //this function meked for get value from search box
   const getData = (data) => {
     setUpdate(data);
   };
   //this function meked for get mood from Button.jsx
 
-  const getMood = (clickMood ) => {
+  const getMood = (clickMood) => {
     setMood(clickMood);
   };
 
