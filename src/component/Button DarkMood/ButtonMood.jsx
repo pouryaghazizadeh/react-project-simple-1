@@ -2,9 +2,8 @@ import "./buttonDarkMood.css";
 import { useState,useEffect } from "react";
 const Button = ({ getMood }) => {
   const [clickMood, setClickMood] = useState(false);
-  getMood(clickMood);
 useEffect(() => {
-}, [])
+  getMood(clickMood);
 
   return (
     <div >
