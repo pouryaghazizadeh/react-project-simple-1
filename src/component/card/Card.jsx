@@ -1,7 +1,7 @@
 import Data from "../db/data.json";
 import "./card.css";
 
-const Card = ({ update,mood,DarkMood }) => {
+const Card = ({ update, mood, DarkMood }) => {
   let tostring = "";
   tostring.concat("", update);
   tostring = tostring.toLocaleLowerCase().toString();
@@ -18,25 +18,41 @@ const Card = ({ update,mood,DarkMood }) => {
   }
 
   return (
-    <div className="container-card" style={mood?DarkMood.bg.d2:DarkMood.bg.l}>
+    <div
+      className="container-card"
+      style={mood ? DarkMood.bg.d2 : DarkMood.bg.l}
+    >
       {FilterDataSearch().map((data, index) => {
-        return (
-          <div key={index} className="div-cards" style={mood?DarkMood.bg.l:DarkMood.bg.d} >
-            <h2 className="title" style = {mood?DarkMood.c.d:DarkMood.c.l}>
-              {data.name}
-              {`S${data.season}E${data.number}`}
-            </h2>
-            <img
-              src={data.image.original}
-              alt={data.name}
-              className="img-card"
-            />
-            <p className="Description-card" style = {mood?DarkMood.c.d:DarkMood.c.l}>
-              {" "}
-              {data.summary.split("</p>").join("").replace("<p>", "")}
-            </p>
-          </div>
-        );
+        if (data.length === 0) {
+          return <div style={{display: 'flex',alignItems: 'center',}}>
+            <h2 style ={{color: "red"}}>fffffffffffffffff</h2>
+          </div>;
+        } else {
+          return (
+            <div
+              key={index}
+              className="div-cards"
+              style={mood ? DarkMood.bg.l : DarkMood.bg.d}
+            >
+              <h2 className="title" style={mood ? DarkMood.c.d : DarkMood.c.l}>
+                {data.name}
+                {`S${data.season}E${data.number}`}
+              </h2>
+              <img
+                src={data.image.original}
+                alt={data.name}
+                className="img-card"
+              />
+              <p
+                className="Description-card"
+                style={mood ? DarkMood.c.d : DarkMood.c.l}
+              >
+                {" "}
+                {data.summary.split("</p>").join("").replace("<p>", "")}
+              </p>
+            </div>
+          );
+        }
       })}
     </div>
   );

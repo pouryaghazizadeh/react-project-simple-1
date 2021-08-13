@@ -5,17 +5,16 @@
 }
 .div-compo {
   width: 100vw;
-  height:80px;
+  height: 80px;
 }
 #div-compo2 {
   width: 100vw;
-  height:80px;
+  height: 80px;
   margin-bottom: 180px;
 }
 
 /* this style is for nav that have h1 and navLink */
 .mother-nav {
-
   height: 80px;
   width: 100vw;
   display: flex;
@@ -26,70 +25,74 @@
 #mother-nav2 {
   height: 259px;
   width: 100vw;
+  padding: 0;
 }
 
-/* style for h1 */
-.name-web {
-background-color: none;
+.div-titel {
+  background: red;
+  height: 70px;
+  width: 250px;
   display: flex;
-  align-self: flex-start;
-  margin: 7px 10vw 0px 9px;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-right: 10vw; */
 }
-#name-web2 {
-  padding: 0;
+#div-titel2 {
   position: absolute;
+  top: 0;
 }
+/* style for h1 web site */
+.name-web{
+  margin-bottom: 0;
+  margin-right: 2px;
+  margin-left: 6px;
+  font-size:xx-large;
+}
+
 /* sstyle for search box */
 .search-box {
   width: 200px;
   height: 35px;
-  border-radius: 4px;
-  
+  border-radius: 5px;
   outline: none;
-  margin: 0px 5vw 0px 0px;
   display: flex;
   font-size: large;
 }
 #search-box2 {
-  display: block;
   display: flex;
   text-align: center;
   justify-content: center;
   width: 100%;
-  margin: 10px 70px 0px 60px;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 1px;
+  left: 1px;
 }
 
 /* this style for berger navbae */
 .Bars {
   display: none;
-  /* color: #fff; */
 }
 /* this style for div that have navlink */
 .nave-menu {
   display: flex;
   align-items: center;
-  margin: 0.5rem calc((100vw - 550px) / 2);
+  margin-left: 0.5rem calc((100vw - 550px) / 2);
+  margin-right: 10px;
 }
 #nave-menu2 {
   position: absolute;
-  top: 158px;
-  left: -9px;
-  height: 300 px;
-  width: 100vw;
-  /* background-color: none; */
+  top: 134px;
+  height: 120px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0px;
+  margin:0;
 }
 
 /* this is NavLinlk style */
 .NavLink {
-  /* color: #fff; */
+
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -108,7 +111,7 @@ background-color: none;
   font-size: large;
 }
 .Log-in:hover {
-  color:#1e1f25;
+  color: #1e1f25;
   background: #15cdfc;
   height: 40px;
   width: 57px;
@@ -117,7 +120,10 @@ background-color: none;
 }
 
 /* media for navbar monile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+  .div-titel {
+    width: 200px;
+  }
   .Bars {
     display: block;
     position: absolute;
@@ -136,10 +142,9 @@ background-color: none;
 }
 
 @media screen and (min-width: 768px) {
-
   #div-compo2 {
     width: 100vw;
-    height:80px;
+    height: 80px;
     margin-bottom: 0px;
   }
   #mother-nav2 {
@@ -149,12 +154,12 @@ background-color: none;
     display: flex;
     justify-content: space-between;
   }
-  #name-web2 {
+  /* #name-web2 {
     color: #15cdfc;
     display: flex;
     align-self: flex-start;
     margin: 15px 10vw 0px 9px;
-  }
+  } */
   #search-box2 {
     width: 200px;
     height: 35px;
@@ -181,6 +186,4 @@ background-color: none;
     cursor: pointer;
     align-self: flex-end;
   }
-
-
 }

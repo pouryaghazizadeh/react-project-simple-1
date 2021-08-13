@@ -1,9 +1,11 @@
 import "./buttonDarkMood.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 const Button = ({ getMood }) => {
   const [clickMood, setClickMood] = useState(false);
   getMood(clickMood);
- 
+useEffect(() => {
+}, [])
+
   return (
     <div >
       <div className = "body-toggel">
