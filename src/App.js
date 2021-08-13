@@ -25,6 +25,7 @@ function App() {
         mood={mood}
         DarkMood={DarkMood}
       />
+
       <Switch>
         <Route path="/" exact>
           <Home update={update} mood={mood} DarkMood={DarkMood} />
@@ -49,14 +50,7 @@ function App() {
 export default App;
 //this object meked for chang mood color to dark and light
 const DarkMood = {
-  lightMood: {
-    background: "#efefef",
-    color: "#090d11",
-  },
-  darkMood: {
-    background: "#090d11",
-    color: "#efefef",
-  },
+
   bg: {
     l: { background: "#efefef" },
     d: { background: "#090d11" },
@@ -80,3 +74,11 @@ const DarkMood = {
 // #090d11
 
 //#1e1f25 first darker color
+// lightMood: {
+//   background: "#efefef",
+//   color: "#090d11",
+// },
+// darkMood: {
+//   background: "#090d11",
+//   color: "#efefef",
+// },
