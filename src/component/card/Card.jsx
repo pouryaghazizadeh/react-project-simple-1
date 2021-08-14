@@ -12,8 +12,7 @@ const Card = ({ update, mood, DarkMood }) => {
     if (p.length >= 1) {
       return Data.filter((i) => {
         //i is index
-      return i= i.name && i.summary.match(p);
-      
+        return (i = i.name && i.summary.match(p));
       });
     }
   }
@@ -24,36 +23,30 @@ const Card = ({ update, mood, DarkMood }) => {
       style={mood ? DarkMood.bg.d2 : DarkMood.bg.l}
     >
       {FilterDataSearch().map((data, index) => {
-        if (FilterDataSearch() === null) {
-          return <div>
-            <h2>fffffffffffffffff</h2>
-          </div>;
-        } else {
-          return (
-            <div
-              key={index}
-              className="div-cards"
-              style={mood ? DarkMood.bg.l : DarkMood.bg.d}
+        return (
+          <div
+            key={index}
+            className="div-cards"
+            style={mood ? DarkMood.bg.l : DarkMood.bg.d}
+          >
+            <h2 className="title" style={mood ? DarkMood.c.d : DarkMood.c.l}>
+              {data.name}
+              {`S${data.season}E${data.number}`}
+            </h2>
+            <img
+              src={data.image.original}
+              alt={data.name}
+              className="img-card"
+            />
+            <p
+              className="Description-card"
+              style={mood ? DarkMood.c.d : DarkMood.c.l}
             >
-              <h2 className="title" style={mood ? DarkMood.c.d : DarkMood.c.l}>
-                {data.name}
-                {`S${data.season}E${data.number}`}
-              </h2>
-              <img
-                src={data.image.original}
-                alt={data.name}
-                className="img-card"
-              />
-              <p
-                className="Description-card"
-                style={mood ? DarkMood.c.d : DarkMood.c.l}
-              >
-                {" "}
-                {data.summary.split("</p>").join("").replace("<p>", "")}
-              </p>
-            </div>
-          );
-        }
+              {" "}
+              {data.summary.split("</p>").join("").replace("<p>", "")}
+            </p>
+          </div>
+        );
       })}
     </div>
   );
