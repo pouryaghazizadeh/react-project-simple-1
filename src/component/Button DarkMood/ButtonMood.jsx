@@ -1,26 +1,27 @@
+import { useEffect, useState } from "react";
 import "./buttonDarkMood.css";
-import { useState,useEffect } from "react";
+
 const Button = ({ getMood }) => {
   const [clickMood, setClickMood] = useState(false);
-useEffect(() => {
-  
-  getMood(clickMood)
-}
-)
+
+  useEffect(() => {
+    getMood(clickMood);
+  });
 
   return (
-    <div >
-      <div className = "body-toggel">
+    <div>
+      <div className="body-toggel">
         <button
-          className={clickMood?"button-toggel2": "button-toggel"}
+          className={clickMood ? "button-toggel2" : "button-toggel"}
+          //button have tow class Because for transform 
           onClick={(e) => {
             setClickMood(!clickMood);
           }}
-        ></button>
+        >
+        </button>
       </div>
     </div>
   );
 };
 
-export default Button
-;
+export default Button;

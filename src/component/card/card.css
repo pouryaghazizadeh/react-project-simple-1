@@ -13,15 +13,20 @@
   width: 310px;
   height: 500px;
   padding: 6px;
-  /* background-color: #000; */
   margin: 4px;
   display: flex;
+border-radius: 10px;
   justify-content: center;
   flex-wrap: wrap;
+ transition: all 0.3s ease-in-out;
+  
 }
+.div-cards:hover{
+  transform: scale(0.9);
+}
+
 /* style for h2 title */
 .title {
-  /* color: white; */
   margin: 9px;
   font-size: 20px;
 }
@@ -33,8 +38,6 @@
 }
 /*this style is for Description cards(p Tag) */
 .Description-card {
-  /* color: white; */
   display: flex;
   flex-wrap: wrap;
 }
-

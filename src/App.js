@@ -24,6 +24,8 @@ function App() {
   const [mood, setMood] = useState(); //this is for update value mood that is light or dark
   return (
     <>
+
+     
       <Navbar
         getData={getData}
         getMood={getMood}

@@ -1,4 +1,6 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import ButtonLogIn from "../component/buttonLogin/ButtonLogIn";
 import "../LogIn/Login.css";
 
@@ -8,6 +10,7 @@ const LogIn = ({ mood, DarkMood }) => {
       className="mother-logIn"
       style={mood ? DarkMood.bg.d2 : DarkMood.bg.d2}
     >
+      <ToastContainer />
       <form
         className="container-box"
         style={mood ? DarkMood.bg.l : DarkMood.bg.d}
