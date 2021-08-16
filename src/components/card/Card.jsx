@@ -1,5 +1,5 @@
 import Data from "../db/data.json";
-import "./card.css";
+import "./cardStyle.css";
 
 const Card = ({ update, mood, DarkMood }) => {
   let tostring = "";

@@ -1,4 +1,4 @@
-import "./PageNotFound.css";
+import "./PageNotFoundStyle.css";
 
 function PageNotFound({mood,DarkMood}) {
   return (

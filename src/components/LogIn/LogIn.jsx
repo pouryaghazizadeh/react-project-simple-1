@@ -1,8 +1,8 @@
 import React from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import ButtonLogIn from "../component/buttonLogin/ButtonLogIn";
-import "../LogIn/Login.css";
+import ButtonLogIn from "../buttonLogin/ButtonLogIn";
+import "./LoginStyle.css";
 
 const LogIn = ({ mood, DarkMood }) => {
   return (

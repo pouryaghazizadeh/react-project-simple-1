@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import ButtonMood from "../Button DarkMood/ButtonMood";
-import "../navbar/navbar.css";
+import "./navbarStyle.css";
 
 //
 //
