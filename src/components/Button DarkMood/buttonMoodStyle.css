@@ -1,0 +1,23 @@
+/* style for body toggel */
+.body-toggel {
+  margin-right: 10px;
+  background-color: #2f3638;
+  width: 70px;
+  height: 30px;
+  border-radius: 44px;
+}
+/* style for first and after toggel */
+.button-toggel {
+  width: 29px;
+  height: 30px;
+  border-radius: 50%;
+  outline: none;
+  border-color: black;
+}
+
+.button-toggel2 {
+  transform: translateX(43px);
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+}

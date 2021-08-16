@@ -1,5 +1,5 @@
 import Card from "../card/Card";
-import "./home.css";
+import "./homeStyle.css";
 const Home = ({ update, mood, DarkMood }) => {
   return (
     <div style={mood ? DarkMood.darkMood : DarkMood.lightMood}>

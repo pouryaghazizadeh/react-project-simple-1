@@ -1,11 +1,11 @@
 import { Route, Switch } from "react-router-dom";
 
 import { useState } from "react/cjs/react.development";
-import Aboute from "./component/about/About";
-import Home from "./component/Home/Home";
-import Navbar from "./component/navbar/Navbar";
-import PageNotFound from "./component/pageNotFound/PageNotFound";
-import LogIn from "./LogIn/LogIn";
+import Aboute from "./components/about/About";
+import Home from "./components/Home/Home";
+import Navbar from "./components/navbar/Navbar";
+import PageNotFound from "./components/pageNotFound/PageNotFound";
+import LogIn from "./components/LogIn/LogIn";
 
 function App() {
 
@@ -24,6 +24,8 @@ function App() {
   const [mood, setMood] = useState(); //this is for update value mood that is light or dark
   return (
     <>
+
+     
       <Navbar
         getData={getData}
         getMood={getMood}
