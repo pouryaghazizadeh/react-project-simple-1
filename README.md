@@ -32,7 +32,23 @@ npm start
 # with this useState in App.js (clickMood) will update 
    const [mood, setMood] = useState(); 
 ```
+#### and colors props to all component
 
 ### Home
 #### this component  have one image and Card.jsx component
-#### Card.jsx component 
+#### Card.jsx component get props (update) from app.js
+#### and also data from Data.json for make card
+#### for filter data when client search someting
+```bash
+# function 
+  function FilterDataSearch() {
+    if (p.length >= 1) {
+      return Data.filter((i) => {
+        //i is index
+        return (i = i.name && i.summary.match(p));
+      });
+    }
+  }
+```
+
+

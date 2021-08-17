@@ -2,6 +2,7 @@ import Data from "../db/data.json";
 import "./cardStyle.css";
 
 const Card = ({ update, mood, DarkMood }) => {
+
   let tostring = "";
   tostring.concat("", update);
   tostring = tostring.toLocaleLowerCase().toString();
