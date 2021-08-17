@@ -34,21 +34,25 @@ npm start
 ```
 #### and colors props to all component
 
-### Home
+### Home component
 #### this component  have one image and Card.jsx component
 #### Card.jsx component get props (update) from app.js
 #### and also data from Data.json for make card
 #### for filter data when client search someting
 ```bash
-# function 
+# function for filter data
   function FilterDataSearch() {
     if (p.length >= 1) {
       return Data.filter((i) => {
-        //i is index
+         i is index
         return (i = i.name && i.summary.match(p));
       });
     }
   }
 ```
+#### and after that on function will maping
+
+### About component
+#### is a card about Tvmaze and have a button from bootstarp one image 
 
 

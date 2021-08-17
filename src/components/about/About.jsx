@@ -1,5 +1,4 @@
 import "./aboutStyle.css";
-
 const Aboute = ({ mood, DarkMood }) => {
   //note => this component have tow h2 title one of them is for mobile screen
   return (
