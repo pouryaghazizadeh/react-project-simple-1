@@ -1,15 +1,12 @@
 import { Route, Switch } from "react-router-dom";
-
 import { useState } from "react/cjs/react.development";
 import Aboute from "./components/about/About";
 import Home from "./components/Home/Home";
+import LogIn from "./components/LogIn/LogIn";
 import Navbar from "./components/navbar/Navbar";
 import PageNotFound from "./components/pageNotFound/PageNotFound";
-import LogIn from "./components/LogIn/LogIn";
 
 function App() {
-
-
   //this function meked for get value from search box
   const getData = (data) => {
     setUpdate(data);
@@ -24,8 +21,6 @@ function App() {
   const [mood, setMood] = useState(); //this is for update value mood that is light or dark
   return (
     <>
-
-     
       <Navbar
         getData={getData}
         getMood={getMood}
@@ -56,6 +51,9 @@ function App() {
 
 export default App;
 //this object meked for chang mood color to dark and light
+//this is an object that have tree object one for background and other one for color andstyle for search box
+// this color (#090d11)is darker than (#1e1f25)
+
 const DarkMood = {
   bg: {
     l: { background: "#efefef" },
@@ -77,14 +75,3 @@ const DarkMood = {
     },
   },
 };
-// #090d11
-
-//#1e1f25 first darker color
-// lightMood: {
-//   background: "#efefef",
-//   color: "#090d11",
-// },
-// darkMood: {
-//   background: "#090d11",
-//   color: "#efefef",
-// },
