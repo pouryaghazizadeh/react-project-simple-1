@@ -53,6 +53,8 @@ npm start
 #### and after that on function will maping
 
 ### About component
-#### is a card about Tvmaze and have a button from bootstarp one image 
+#### is a card about Tvmaze and have a button from bootstarp one logo TvMAze
+
+### Login component
 
 
