@@ -12,11 +12,11 @@
   height: 30px;
   border-radius: 50%;
   outline: none;
-  border-color: black;
+  border-color: #efefef;
 }
 
-.button-toggel2{
-  transform: translateX(43px);
+.button-toggel2 {
+  transform: translateX(40px);
   width: 29px;
   height: 29px;
   border-radius: 50%;
